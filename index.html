@@ -18,22 +18,37 @@
 </head>
 <body>
 
-  Day
-  DD
+  <div class="app">
+    <form class="form">
+      <div class="form__main">
+        <div class="form__input-container">
+          <label class="form__input-label" for="form__input-day">Day</label>
+          <input id="form__input-day" class="form__input" type="number" placeholder="DD" min="1" max="31"/>
+          <p class="form__input-error">Must be a valid day</p>
+        </div>
+        <div class="form__input-container">
+          <label class="form__input-label" for="form__input-month">Month</label>
+          <input id="form__input-month" class="form__input" type="number" placeholder="MM" min="1" max="12"/>
+          <p class="form__input-error">Must be a valid month</p>
+        </div>
+        <div class="form__input-container">
+          <label class="form__input-label" for="form__input-month">Year</label>
+          <input id="form__input-year" class="form__input" type="number" placeholder="YY"/>
+          <p class="form__input-error">Must be in the past</p>
+        </div>
+    </div>
+    <div class="form__submit">
+      <button type="submit" class="form__submit-btn"><img src="./assets/images/icon-arrow.svg" alt="Arrow" class="form__submit-img"/></button>
+    </div>
+  </form>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="app__result">
+    <h2 class="app__result-years"><span class="app__result-highlight">38</span> years</h2>
+    <h2 class="app__result-months"><span class="app__result-highlight">3</span> months</h2>
+    <h2 class="app__result-days"><span class="app__result-highlight">26</span> days</h2>
   </div>
+    
+  </div>
+  
 </body>
 </html>
