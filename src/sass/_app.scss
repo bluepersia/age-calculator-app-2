@@ -8,6 +8,11 @@
     border-bottom-right-radius: 100px;
     padding: 4em 2em;
 
+    @media (min-width:1000px)
+    {
+        padding: 4em;
+        border-bottom-right-radius: 200px;
+    }
 }
 
 
@@ -18,12 +23,23 @@
         display: flex;
         gap: 1.33em;
         margin-bottom: 2.66em;
+        
+        @media (min-width:1000px)
+        {
+            margin-bottom: 0;
+            padding-right: 13.1em;
+        }
     }
 
     &__input-container {
         display: flex;
         flex-direction: column;
         width: 87px;
+
+        @media (min-width:1000px)
+        {
+            width: 160px;
+        }
     }
 
     &__input-label 
@@ -33,6 +49,11 @@
         color: $color-Grey;
         letter-spacing: .25em;
         margin-bottom: .33em;
+
+        @media(min-width:1000px)
+        {
+            margin-bottom: .57em;
+        }
     }
 
     &__input::placeholder {
@@ -45,6 +66,12 @@
         padding: .6em .8em;
         border-radius: 8px;
         border:solid 1px $color-Line;
+
+        @media (min-width:1000px)
+        {
+            font-size: 2.28em;
+            padding: .375em .75em;
+        }
     }
     &__input::-webkit-outer-spin-button,
     &__input::-webkit-inner-spin-button
@@ -99,10 +126,17 @@
             cursor: pointer;
             background-color: $color-Purple;
             transition: background-color 300ms;
+
+            @media (min-width:1000px)
+            {
+                margin-right: 0;
+            }
             
             &:hover {
                 background-color: $color-Black;
             }
+
+           
         }
         &-img 
         {
@@ -132,3 +166,6 @@
         color: $color-Purple;
     }
 }
+
+
+

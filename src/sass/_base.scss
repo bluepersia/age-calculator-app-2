@@ -38,3 +38,10 @@ p {
 html {
     font-size: 12px;
 }
+
+@media (min-width: 1000px)
+{
+    html {
+        font-size: 14px;
+    }
+}
