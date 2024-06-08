@@ -15,5 +15,6 @@
 .DS_Store
 .prettierignore
 
-/node_modules/
-dist
+
+node_modules
+dist/bundle.js
