@@ -25,32 +25,34 @@
       <div class="form__main">
         <div class="form__input-container">
           <label class="form__input-label" for="form__input-day">Day</label>
-          <input id="form__input-day" class="form__input" type="number" placeholder="DD" min="1" max="31"/>
+          <input id="form__input-day" class="form__input" type="number" data-required="true" data-min="1" data-max="31" placeholder="DD" />
           <p class="form__input-error">Must be a valid day</p>
         </div>
         <div class="form__input-container">
           <label class="form__input-label" for="form__input-month">Month</label>
-          <input id="form__input-month" class="form__input" type="number" placeholder="MM" min="1" max="12"/>
+          <input id="form__input-month" class="form__input" type="number" data-required="true" data-min="1" data-max="12" placeholder="MM"  />
           <p class="form__input-error">Must be a valid month</p>
         </div>
         <div class="form__input-container">
           <label class="form__input-label" for="form__input-month">Year</label>
-          <input id="form__input-year" class="form__input" type="number" placeholder="YY"/>
+          <input id="form__input-year" class="form__input" type="number" data-required="true" placeholder="YY"/>
           <p class="form__input-error">Must be in the past</p>
         </div>
     </div>
+    <p class="form__error-main">Must be a valid date</p>
     <div class="form__submit">
       <button type="submit" class="form__submit-btn"><svg class="form__submit-img" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
     </div>
   </form>
 
   <div class="results">
-    <h2 class="results__result results__years"><span class="results__highlight">--</span> years</h2>
-    <h2 class="results__result results__months"><span class="results__highlight">--</span> months</h2>
-    <h2 class="results__result results__days"><span class="results__highlight">--</span> days</h2>
+    <h2 class="results__result results__years"><span class="results__highlight">--</span> <span class="results__label">years</span></h2>
+    <h2 class="results__result results__months"><span class="results__highlight">--</span> <span class="results__label">months</span></h2>
+    <h2 class="results__result results__days"><span class="results__highlight">--</span> <span class="results__label">days</span></h2>
   </div>
     
   </div>
   
+  <script src="./dist/bundle.js"></script>
 </body>
 </html>
