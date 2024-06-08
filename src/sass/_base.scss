@@ -1,0 +1,32 @@
+$color-Black:#151515;
+$color-Purple: #854DFF;
+$color-White: #FFFFFF;
+$color-LightGrey: #F0F0F0;
+$color-Grey: #716F6F;
+$color-Line: #DCDCDC;
+$color-Red: #FF5959;
+
+body 
+{
+    margin: 0;
+    background-color: $color-LightGrey;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11.3em 4.2%;
+}
+
+
+*  {
+    box-sizing: border-box;
+}
+
+* :first-child
+{
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
