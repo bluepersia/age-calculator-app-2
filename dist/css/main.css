@@ -34,6 +34,11 @@ html {
     font-size: 14px;
   }
 }
+.error, .form__error-main, .form__input-error {
+  font-style: italic;
+  color: #FF5959;
+}
+
 .app {
   background-color: #FFFFFF;
   border-radius: 24px;
@@ -97,20 +102,28 @@ html {
     padding: 0.375em 0.75em;
   }
 }
+.form__input-error {
+  display: none;
+}
+.form__input-container.invalid .form__input-error {
+  display: block;
+}
 .form__input::-webkit-outer-spin-button, .form__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 .form__input[type=number] {
+  appearance: inherit;
   -moz-appearance: textfield;
 }
-.form__input-error {
+.form__error-main {
   display: none;
-  color: #FF5959;
-  font-style: italic;
 }
-.form__input-container.invalid .form__input-error {
+.form.invalid .form__error-main {
   display: block;
+}
+.form.invalid .form__input-error {
+  display: none;
 }
 .form__submit {
   position: relative;
