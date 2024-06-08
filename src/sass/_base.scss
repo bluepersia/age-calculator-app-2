@@ -15,8 +15,11 @@ body
     justify-content: center;
     align-items: center;
     padding: 11.3em 4.2%;
+    font-family: "Poppins", sans-serif;
 }
-
+p {
+    line-height: 1.6;
+}
 
 *  {
     box-sizing: border-box;
@@ -29,4 +32,16 @@ body
 
 * :last-child {
     margin-bottom: 0;
+}
+
+
+html {
+    font-size: 12px;
+}
+
+@media (min-width: 1000px)
+{
+    html {
+        font-size: 14px;
+    }
 }

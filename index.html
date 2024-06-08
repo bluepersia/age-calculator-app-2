@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
-
-  <link rel="stylesheet" href="./dist/css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/main.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
@@ -38,14 +40,14 @@
         </div>
     </div>
     <div class="form__submit">
-      <button type="submit" class="form__submit-btn"><img src="./assets/images/icon-arrow.svg" alt="Arrow" class="form__submit-img"/></button>
+      <button type="submit" class="form__submit-btn"><svg class="form__submit-img" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
     </div>
   </form>
 
-  <div class="app__result">
-    <h2 class="app__result-years"><span class="app__result-highlight">38</span> years</h2>
-    <h2 class="app__result-months"><span class="app__result-highlight">3</span> months</h2>
-    <h2 class="app__result-days"><span class="app__result-highlight">26</span> days</h2>
+  <div class="results">
+    <h2 class="results__result results__years"><span class="results__highlight">--</span> years</h2>
+    <h2 class="results__result results__months"><span class="results__highlight">--</span> months</h2>
+    <h2 class="results__result results__days"><span class="results__highlight">--</span> days</h2>
   </div>
     
   </div>
